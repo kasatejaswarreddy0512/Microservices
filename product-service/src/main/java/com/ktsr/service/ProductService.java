@@ -15,7 +15,7 @@ public class ProductService {
 
     private final ProductRepository productRepository;
 
-    public Product addProduct(ProductRequest productRequest){
+    public Product createProduct(ProductRequest productRequest){
         Product product= Product.builder()
                 .name(productRequest.getName())
                 .description(productRequest.getDescription())
