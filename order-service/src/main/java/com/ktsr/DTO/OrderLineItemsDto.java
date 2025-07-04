@@ -1,21 +1,17 @@
-package com.ktsr.model;
+package com.ktsr.DTO;
 
-import jakarta.persistence.*;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
-@Table(name = "orderItemList")
-public class OrderLineItems {
+public class OrderLineItemsDto {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String skuCode;
     private Double price;
